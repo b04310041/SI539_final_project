@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo-drk.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Tzu-Yu Ko Portfolio</title>
+    <script src="https://kit.fontawesome.com/8567cf266f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <aside>
+                <div class="main-header">
+                    <img src="profile.jpg" alt="Tzu-Yu Ko Image">
+                    <h4>Tzu-Yu <span>Ko</span></h4>
+                    <p>Data Analyst</p>
+                    <div class="social">
+                        <span><a href="#"><i style="color:#3b5998" class="fab fa-facebook"></i></a></span>
+                        <span><a href="#"><i style="color:#2eb7bd" class="fab fa-twitter"></i></a></span>
+                        <span><a href="#"><i style="color:rgb(228, 64, 95)" class="fab fa-instagram"></i></a></span>
+                    </div>
+                    <address>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>Ann Arbor <span>Michigan</span></p>
+                    </address>
+                    <div class="contact">
+                        <a href="mailto: ktyko@umich.edu" class="mail">Email Me</a>
+                    </div>
+                </div>
+            </aside>
+            <div class="main">
+                <div class="heading-section">
+                    <div class="title">
+                        <h1>About</h1>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="nav-toggle">
+                        <button class="toggle" onclick="openNav()"><span class="inner"></span></button>
+                    
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav1">
+                        <ul>
+                            <li class="close" onclick="closeNav()"><i class="fas fa-arrow-left"></i></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About Me</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="info">
+                    <p>My name is Tzu-Yu Ko. My name is Tzu-Yu Ko. My name is Tzu-Yu Ko.</p>
+                </div>
+                <div class="ido">
+                    <div class="ido-title">
+                        <h2>What I do</h2>
+
+                    </div>
+                    <div class="card-section">
+                        <div class="web-card card">
+                            <div class="card-icon">
+                                <span><i class="fas fa-laptop"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <h3>Web Development</h3>
+                                <p>My name is Tzu-Yu Ko.</p>
+                            </div>
+                        </div>
+                        <div class="web-card card">
+                            <div class="card-icon">
+                                <span><i class="fas fa-mobile-alt"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <h3>Responsive Designi</h3>
+                                <p>My name is Tzu-Yu Ko.</p>
+                            </div>
+                        </div>
+                        <div class="web-card card">
+                            <div class="card-icon">
+                                <span><i class="fa fa-cogs"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <h3>Software Development</h3>
+                                <p>My name is Tzu-Yu Ko.</p>
+                            </div>
+                        </div>
+                        <div class="web-card card">
+                            <div class="card-icon">
+                                <span><i class="far fa-comments"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <h3>Communication</h3>
+                                <p>My name is Tzu-Yu Ko.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        openNav = () => {
+            document.querySelector('.nav1 ul').style.display = "block";
+        }
+        closeNav = () => {
+            document.querySelector(".nav1 ul").style.display = "none";
+        }
+    </script>
+</body>
+</html>
