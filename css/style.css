@@ -42,7 +42,7 @@ aside {
     display: block;
     grid-area: main;
     height: auto;
-    width: 100%;
+    width: auto;
     background: #fff;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .7);
     grid-area: main;
@@ -183,12 +183,18 @@ address p {
     height: 3px;
 }
 
-.title h1, 
-.ido h2 {
+.title h1 {
     font-size: 2rem;
     margin: 7px 10px;
     margin-left: 0;
     text-transform: uppercase;
+}
+
+.ido h2 {
+    font-size: 2rem;
+    margin: 7px 10px;
+    margin-left: 0;
+    text-transform: capitalize;
 }
 
 .info {
@@ -317,9 +323,53 @@ address p {
     cursor: pointer;
 }
 
+/* ================== */
+
+.info>p {
+    font-size: 0.9rem;
+}
+
 .card-info {
     overflow: auto;
 }
+
+.web-card p {
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+}
+
+.work-card-info {
+    margin: -8px -5px -8px 0;
+}
+
+.work-card-info h3 {
+    margin-bottom: -4px;
+}
+
+.work-card-info span, .work-card-info span i  {
+    font-size: 0.8rem;
+    color: rgb(74, 74, 74);
+}
+
+.work-card-info span i {
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+.project-card-info {
+    margin: -5px -5px -3px 0;
+}
+
+.project-card-info h3 {
+    font-size: 1rem;
+}
+
+.project-card-info p {
+    font-size: 0.9rem;
+}
+
+
+
 
 @media screen and (min-width: 700px) {
     aside {
@@ -347,18 +397,16 @@ address p {
         margin-bottom: 30px; /* Adjust the margin between icon and card-info */
     }
 
-    .web-card h3 {
+    /* .web-card h3 {
         margin-bottom: 5px;
-    }
+    } */
 
-    .web-card p {
-        color: rgb(92, 92, 92);
-    }
+    
 
 }
 
 @media screen and (min-width: 900px) {
-    
+
     
     .container {
         display: grid;
@@ -414,7 +462,7 @@ address p {
 
     .nav {
         display: block;
-        margin-right: -75px;
+        margin-right: -20px;
     }
 
     .nav ul {
@@ -435,6 +483,11 @@ address p {
         cursor: pointer;
     }
 
+    .current {
+        /* border-bottom: 2px solid #fff; */
+        background: #144097;
+    }
+
     .nav ul li a {
         text-decoration: none;
         font-size: 1rem;
@@ -452,6 +505,8 @@ address p {
 
     .info {
         margin: 30px 40px;
+        height: 80px;
+        overflow: auto;
     }
 
 
