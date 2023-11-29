@@ -184,8 +184,8 @@ address p {
 }
 
 .title h1 {
-    font-size: 2rem;
-    margin: 7px 10px;
+    font-size: 1.5rem;
+    margin: 10px 10px 5px 10px;
     margin-left: 0;
     text-transform: uppercase;
 }
@@ -234,8 +234,9 @@ address p {
      margin: 10px 20px 0px 0px;
 }
 
-.card-section .card:nth-child(2) .card-icon {
-    margin-right: 35px;
+.work-card-section .card:nth-child(2n) .card-icon {
+    margin-right: 30px;
+    margin-left: 5px;
 }
 
 .card-section .card-icon  i {
@@ -368,6 +369,19 @@ address p {
     font-size: 0.9rem;
 }
 
+.card-info p {
+    color: rgb(69, 69, 69);
+}
+
+.skip a{
+    position: absolute; /*?why need this?*/
+    top: -40px;
+    overflow: hidden;
+}
+
+.skip a:focus{
+    top: 20px;
+}
 
 
 
@@ -462,7 +476,7 @@ address p {
 
     .nav {
         display: block;
-        margin-right: -20px;
+        position: relative;
     }
 
     .nav ul {
