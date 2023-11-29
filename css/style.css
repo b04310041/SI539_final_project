@@ -394,6 +394,10 @@ address p {
     border: 0;
 }
 
+.card-info:focus {
+    outline: 2px solid blue; /* Adjust the color and style as needed */
+}
+
 @media screen and (min-width: 700px) {
     aside {
         width: 75%;
