@@ -394,7 +394,7 @@ address p {
     border: 0;
 }
 
-.card-info:focus {
+.card-info:focus-visible {
     outline: 2px solid blue; /* Adjust the color and style as needed */
 }
 
