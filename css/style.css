@@ -136,28 +136,6 @@ address p {
 .mail {
     text-decoration: none;
     position: relative;
-    background-color: #256af3;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.mail:hover {
-    background-color: #fff;
-    color: #256af3;
-    border: 1px solid #256af3;
-    transition: all .3s ease-in-out;
-} 
-
-.contact {
-    position: relative;
-    text-align: center;
-    top: 40px;
-}
-
-.mail {
-    text-decoration: none;
-    position: relative;
     background: #256af3;
     color: #fff;
     padding: 10px 20px;
@@ -557,4 +535,23 @@ address p {
         visibility: collapse;
     }
 
+}
+
+@media all and (prefers-reduced-motion: reduce) {
+    .social span:hover {
+        transition: none;
+    }
+
+    .mail:hover {
+        transition: none;
+    }
+
+    .nav1 ul {
+        transition: none;
+    }
+
+    .nav ul li {
+        transition: none;
+    }
+    
 }
