@@ -9,6 +9,8 @@ body {
     padding: 40px;
     overflow-x: hidden;
     background-image: linear-gradient(110deg, #5fa0a0, #af75a2);
+    /* background-image: linear-gradient(110deg, #58abd4, #542340); */
+    height: 1770px;
 }
 
 p {
@@ -113,7 +115,6 @@ address {
 
 address span:nth-child(1) {
     padding: 5px;
-    margin-left: 10px;
 }
 
 address span i {
@@ -399,6 +400,11 @@ address p {
 }
 
 @media screen and (min-width: 700px) {
+    
+    body {
+        height: 1370px;
+    }
+    
     aside {
         width: 75%;
         margin: 0 auto;
@@ -433,6 +439,10 @@ address p {
 }
 
 @media screen and (min-width: 900px) {
+
+    body {
+        height: 100vh;
+    }
 
     
     .container {
@@ -490,6 +500,7 @@ address p {
     .nav {
         display: block;
         position: relative;
+        margin-top: 5px;
     }
 
     .nav ul {
@@ -500,7 +511,7 @@ address p {
     }
 
     .nav ul li {
-        padding: 15px 20px;
+        padding: 10px 20px 10px 20px;
         border-bottom: 2px solid transparent;
         transition: border .3s ease-in-out;
     }
